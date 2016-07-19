@@ -31,7 +31,7 @@ module SessionsHelper
 	end
 	
 	#returns true if the given user is the current user
-	def current_user?(user)
+	def current_user?(user) #if this parameterized function is remove, you will have wrong argument method
 		user == current_user
 	end
 
