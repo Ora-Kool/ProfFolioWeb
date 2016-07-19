@@ -45,14 +45,14 @@ class UsersController < ApplicationController
     unless logged_in?
       store_location
       flash[:danger] = "Please log in."
-      redirect_to login_url
+      redirect_to login_url #ask user to login if visitor tries to access secured pages from url
     end
   end
 
   #Comfirms the correct user
   def correct_user
     @user = User.find(params[:id])
-    redirect_to(root_url) unless current_user?(@user)
+    redirect_to(root_url) unless current_user?(@user) #redirecting user back to home if they are not login
   end
   #all other methods should be above the private identifier
   private
