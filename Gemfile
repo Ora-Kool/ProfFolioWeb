@@ -4,7 +4,17 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
 
+#bootstrap gem
 gem 'bootstrap-sass', '3.2.0.2'
+
+#faker gem to create multiple users into the database
+gem 'faker', '1.6.3'
+
+#this is use for pagination
+gem 'will_paginate', '3.1.0'
+
+#bootstrap helper and styling pagination
+gem 'bootstrap-will_paginate', '0.0.10'
 
 #used for encytion
 gem 'bcrypt', '3.1.11'
